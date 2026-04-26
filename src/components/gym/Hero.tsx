@@ -45,7 +45,7 @@ const Hero = () => {
             — NO EXCUSES. ONLY RESULTS.
           </p>
           <h1
-            className="text-display text-6xl sm:text-7xl md:text-8xl lg:text-[10rem] font-bold leading-[0.9] opacity-0 animate-fade-in-up"
+            className="text-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[7.5rem] font-bold leading-[0.95] opacity-0 animate-fade-in-up"
             style={{ animationDelay: "400ms" }}
           >
             TRANSFORM <br />
