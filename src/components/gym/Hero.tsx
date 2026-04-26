@@ -38,12 +38,6 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 h-full container-px mx-auto max-w-7xl flex flex-col justify-center">
         <div className="max-w-4xl">
-          <p
-            className="text-headline text-sm md:text-base text-primary mb-6 tracking-[0.4em] opacity-0 animate-fade-in-up"
-            style={{ animationDelay: "200ms" }}
-          >
-            — NO EXCUSES. ONLY RESULTS.
-          </p>
           <h1
             className="text-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[7.5rem] font-bold leading-[0.95] opacity-0 animate-fade-in-up"
             style={{ animationDelay: "400ms" }}
