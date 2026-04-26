@@ -24,7 +24,9 @@ const Navbar = () => {
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
-        scrolled ? "bg-background/85 backdrop-blur-md border-b border-border/60" : "bg-transparent"
+        scrolled
+          ? "bg-background/90 backdrop-blur-md border-b border-border/60 shadow-lg shadow-background/50"
+          : "bg-gradient-to-b from-background/80 via-background/40 to-transparent backdrop-blur-sm"
       }`}
     >
       <nav className="container-px mx-auto flex h-20 max-w-7xl items-center justify-between">
