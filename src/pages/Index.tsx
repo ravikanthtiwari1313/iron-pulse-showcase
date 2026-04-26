@@ -1,16 +1,47 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useEffect } from "react";
+import { useReveal } from "@/hooks/useReveal";
+import Navbar from "@/components/gym/Navbar";
+import Hero from "@/components/gym/Hero";
+import Marquee from "@/components/gym/Marquee";
+import About from "@/components/gym/About";
+import Programs from "@/components/gym/Programs";
+import Trainers from "@/components/gym/Trainers";
+import Gallery from "@/components/gym/Gallery";
+import Locations from "@/components/gym/Locations";
+import Testimonials from "@/components/gym/Testimonials";
+import CtaBanner from "@/components/gym/CtaBanner";
+import Contact from "@/components/gym/Contact";
+import Footer from "@/components/gym/Footer";
 
-// IMPORTANT: Fully REPLACE this with your own code
-const PlaceholderIndex = () => {
-  // PLACEHOLDER: Replace this entire return statement with the user's app.
-  // The inline background color is intentionally not part of the design system.
+const Index = () => {
+  useReveal();
+
+  useEffect(() => {
+    document.title = "IRONFORGE — Transform Your Body. Build Your Strength.";
+    const meta =
+      document.querySelector('meta[name="description"]') ||
+      Object.assign(document.createElement("meta"), { name: "description" });
+    (meta as HTMLMetaElement).content =
+      "IRONFORGE is the city's most uncompromising training facility. Elite coaching, premium equipment, two locations. Join the forge.";
+    if (!meta.parentElement) document.head.appendChild(meta);
+  }, []);
+
   return (
-    <div className="flex min-h-screen items-center justify-center" style={{ backgroundColor: '#fcfbf8' }}>
-      <img data-lovable-blank-page-placeholder="REMOVE_THIS" src="/placeholder.svg" alt="Your app will live here!" />
-    </div>
+    <main className="bg-background text-foreground">
+      <Navbar />
+      <Hero />
+      <Marquee />
+      <About />
+      <Programs />
+      <Trainers />
+      <Gallery />
+      <Locations />
+      <Testimonials />
+      <CtaBanner />
+      <Contact />
+      <Footer />
+    </main>
   );
 };
-
-const Index = PlaceholderIndex;
 
 export default Index;
